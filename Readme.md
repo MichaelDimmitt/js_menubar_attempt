@@ -18,6 +18,10 @@ npm install
   npm install --save-dev electron
 
 electron-packager .
-<pre>
+</pre>
+<br>
+<b>In one command, rebuild:</b>
+<pre>electron-packager . --overwrite; open tutorial-menubar-app-darwin-x64/tutorial-menubar-app.app/</pre>
+
 Copyright (c) 2017, Michael Dimmitt
-Access granted upon request. 
+<br>Access granted upon approved request. 
