@@ -19,3 +19,5 @@ npm install
 
 electron-packager .
 <pre>
+Copyright (c) 2017, Michael Dimmitt
+Access granted upon request. 
