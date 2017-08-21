@@ -1,3 +1,5 @@
+![menubar_interface](https://user-images.githubusercontent.com/11463275/29501256-41e46114-85f5-11e7-9876-108172bef118.png)
+
 #### Note To Self: early development. This repository is being developed with forks as a bridge node. <br>Click through to the specific organization and make changes on that branch.
 ### Electron, a node package that turns your javascript into desktop applications.
 For our purposes, "MenuBar" Desktop Application.
