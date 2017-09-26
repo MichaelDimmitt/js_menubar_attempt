@@ -14,7 +14,7 @@ atom index.html
 atom main.js
 atom package.json
 
-npm install
+npm install -g opener
 npm install
   if "Cannot find module 'electron' from '/Users/michaeldimmitt/js_menubar_attempt'"
   npm install --save-dev electron
