@@ -2,10 +2,20 @@ const {ipcRenderer} = require('electron')
 var opener = require("opener");
 
       function testytest() {
-        opener("http://google.com");
-        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Installer.app")
+        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Installer.app")
       }
 
+      function Start() {
+        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Start.app")
+      }
+
+      function Stop() {
+        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Stop.app")
+      }
+
+      function Uninstall() {
+        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Uninstall.app")
+      }
 //opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Uninstall.app")
 //opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Start.app")
 //opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Stop.app")
