@@ -1,0 +1,4 @@
+shrink=../../../..
+./$shrink/app/uninstall/unstage_launch_agent.sh
+./$shrink/app/uninstall/remove_aerial.sh
+
