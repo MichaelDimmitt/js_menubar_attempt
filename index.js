@@ -16,12 +16,16 @@ const assetsDir = path.join(__dirname, 'assets');
         opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Stop.app")
       }
 
-      function StarWarsScroll() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/StarWarsScroll.app")
+      function FractalClock() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/FractalClock.app")
       }
 
       function MarineAquarium() {
         opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MarineAquarium3.2.app/")
+      }
+
+      function StarWarsScroll() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/StarWarsScroll.app")
       }
 
       function WebViewScreenSaver() {
@@ -32,16 +36,12 @@ const assetsDir = path.join(__dirname, 'assets');
         opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MatrixScreenSaver.app")
       }
 
-      function BlueScreenSaver() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/BlueScreenSaver.app")
-      }
-
       function KPSaver() {
         opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/KPSaver.app")
       }
 
-      function FractalClock() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/FractalClock.app")
+      function BlueScreenSaver() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/BlueScreenSaver.app")
       }
 
       function Aerial() {
