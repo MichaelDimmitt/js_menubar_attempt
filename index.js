@@ -1,31 +1,53 @@
-const {ipcRenderer} = require('electron')
+var http = require('http');
+const {ipcRenderer} = require('electron');
 var opener = require("opener");
+const path = require('path');
+const assetsDir = path.join(__dirname, 'assets');
 
-      function testytest() {
-        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Installer.app")
+      function Install() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Installer.app")
       }
 
       function Start() {
-        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Start.app")
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Start.app")
       }
 
       function Stop() {
-        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Stop.app")
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Stop.app")
+      }
+
+      function StarWarsScroll() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/StarWarsScroll.app")
+      }
+
+      function MarineAquarium() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MarineAquarium3.2.app/")
+      }
+
+      function WebViewScreenSaver() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/WebViewScreenSaver.app/")
+      }
+
+      function MatrixScreenSaver() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MatrixScreenSaver.app")
+      }
+
+      function BlueScreenSaver() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/BlueScreenSaver.app")
+      }
+
+      function KPSaver() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/KPSaver.app")
+      }
+
+      function FractalClock() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/FractalClock.app")
+      }
+
+      function Aerial() {
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/Aerial.app")
       }
 
       function Uninstall() {
-        opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/.hide/bin/Uninstall.app")
+        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Uninstall.app")
       }
-//opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Uninstall.app")
-//opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Start.app")
-//opener ("/Users/michaeldimmitt/new_h/temp/Aerial_Desktop/Stop.app")
-
-document.addEventListener('DOMContentLoaded', () => {
-  let n = new Notification('You did it!', {
-    body: 'Nice work.'
-  })
-
-  // Tell the notification to show the menubar popup window on click
-  n.onclick = () => { ipcRenderer.send('show-window') }
-
-})
