@@ -7,51 +7,52 @@ const assetsDir = path.join(__dirname, 'assets');
 const AerialDesktop = path.join(__dirname, 'Aerial_Desktop');
 const hiding = path.join(AerialDesktop, '.hide');
 const binning = path.join(hiding, 'bin');
+const access_screen_saver = path.join(binning, 'p');
       function Install() {
         opener(path.join(binning, 'Installer.app'));
         //opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Installer.app")
       }
 
       function Start() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Start.app")
+        opener (path.join(binning, 'Start.app'));
       }
 
       function Stop() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Stop.app")
+        opener (path.join(binning, 'Stop.app'));
       }
 
       function FractalClock() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/FractalClock.app")
+        opener (path.join(access_screen_saver,'FractalClock.app'));
       }
 
       function MarineAquarium() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MarineAquarium3.2.app/")
+        opener (path.join(access_screen_saver,'MarineAquarium3.2.app'));
       }
 
       function StarWarsScroll() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/StarWarsScroll.app")
+        opener (path.join(access_screen_saver,'StarWarsScroll.app'));
       }
 
       function WebViewScreenSaver() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/WebViewScreenSaver.app/")
+        opener (path.join(access_screen_saver,'WebViewScreenSaver.app'));
       }
 
       function MatrixScreenSaver() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/MatrixScreenSaver.app")
+        opener (path.join(access_screen_saver,'MatrixScreenSaver.app'));
       }
 
       function KPSaver() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/KPSaver.app")
+        opener (path.join(access_screen_saver,'KPSaver.app'));
       }
 
       function BlueScreenSaver() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/BlueScreenSaver.app")
+        opener (path.join(access_screen_saver,'BlueScreenSaver.app'))
       }
 
       function Aerial() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/p/Aerial.app")
+        opener (path.join(access_screen_saver,'Aerial.app'));
       }
 
       function Uninstall() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Uninstall.app")
+        opener (path.join(binning,'Uninstall.app'));
       }
