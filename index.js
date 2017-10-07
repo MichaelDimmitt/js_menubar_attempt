@@ -4,8 +4,12 @@ var opener = require("opener");
 const path = require('path');
 const assetsDir = path.join(__dirname, 'assets');
 
+const AerialDesktop = path.join(__dirname, 'Aerial_Desktop');
+const hiding = path.join(AerialDesktop, '.hide');
+const binning = path.join(hiding, 'bin');
       function Install() {
-        opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Installer.app")
+        opener(path.join(binning, 'Installer.app'));
+        //opener ("/Users/michaeldimmitt/new_attempt/js_menubar_attempt2/Aerial_Desktop/.hide/bin/Installer.app")
       }
 
       function Start() {
