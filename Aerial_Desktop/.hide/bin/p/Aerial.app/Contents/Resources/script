@@ -16,7 +16,7 @@ TIMEOUT=25
 shrink="$DIR/../../../"
 # shrink=""
 # echo $(ls $shrink../../../../mac_plist_launch_agent/app/)
-$shrink../../../../mac_plist_launch_agent/app/install_driver.sh
+$shrink../../../../mac_plist_launch_agent/app/./install_driver.sh
 $shrink./1_download_aerial.sh $screen$saver
 adaptive_wait
 osascript -e 'quit app "System Preferences"'
