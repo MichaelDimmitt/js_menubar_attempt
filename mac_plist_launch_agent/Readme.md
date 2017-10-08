@@ -11,7 +11,7 @@ Simple example of a mac app launch agent. People can use as a template.
 
 ## Challenges (why needed)
 Launch Agents do not immediately provide output<br>
-to where a programmer can immediately see hello world.<br>
+to where a programmer can immediately see menu_aerial world.<br>
 install_driver... sets the plist up and runs.
 
 ## Installation(program persists when installed until uninstalled.)
