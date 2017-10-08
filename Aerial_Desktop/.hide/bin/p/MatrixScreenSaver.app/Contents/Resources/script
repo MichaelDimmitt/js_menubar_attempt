@@ -1,6 +1,6 @@
 osascript -e 'quit app "System Preferences"'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-screen=$1
+screen='MatrixScreenSaver'
 saver='.saver'
 adaptive_wait () {
 TIMEOUT=25

@@ -1,6 +1,6 @@
 osascript -e 'quit app "System Preferences"'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-screen=$1
+screen='WebViewScreenSaver'
 saver='.saver'
 adaptive_wait () {
 TIMEOUT=25
@@ -19,4 +19,5 @@ $shrink./1_download_aerial.sh $screen$saver
 adaptive_wait
 osascript -e 'quit app "System Preferences"'
 $shrink./2_local_install_workaround.sh aerial
+$shrink./3_install_launch_agent.sh aerial
 open $shrink$screen"2.app"
