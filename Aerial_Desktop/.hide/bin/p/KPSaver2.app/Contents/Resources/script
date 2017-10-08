@@ -1,0 +1,34 @@
+screen='KPSaver.saver'
+adaptive_wait () {
+TIMEOUT=25
+  until [ -d ~/Library/Screen\ Savers/$screen ] || [ -d /Library/Screen\ Savers/$screen ] || [ $TIMEOUT -eq 0 ] ; do
+    if ! ((TIMEOUT % 5)); then
+    osascript -e 'display notification "To allow for Decision/User Credentials" with title "Application Waiting"'
+    fi
+    sleep 1
+    TIMEOUT=$[$TIMEOUT-1]
+  done
+}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# run aerial application
+  if [ -d ~/Library/Screen\ Savers/$screen ] || [ -d /Library/Screen\ Savers/$screen ] ; then
+    echo "File exists."
+  else
+    open $DIR/../../../../../bin/$screen
+  fi
+
+adaptive_wait
+
+//change defaults //reload launchagent
+if [ -d ~/Library/Screen\ Savers/$screen ] ; then
+  defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen\ Savers/$screen"; defaults -currentHost write com.apple.screensaver moduleName -string "Aerial";defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path ~/Library/Screen\ Savers/$screen type 0;
+  osascript -e 'display notification "Installed for this user only, enjoy." with title "Success, Aerial Desktop"'
+elif [ -d /Library/Screen\ Savers/$screen ] ; then
+  defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path /Library/Screen\ Savers/$screen type 0
+  osascript -e 'display notification "Installed for all users, enjoy." with title "Success, Aerial Desktop"'
+else-
+  osascript -e 'display notification "Did you put your credentials? Uninstall and reinstall, thanks." with title "error 333 Aerial Desktop"'
+fi
+launchctl unload ~/Library/LaunchAgents/com.aerial.desktop.plist
+launchctl load ~/Library/LaunchAgents/com.aerial.desktop.plist
