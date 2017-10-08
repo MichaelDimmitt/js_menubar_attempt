@@ -11,7 +11,7 @@ TIMEOUT=25
   done
 }
 shrink=../../..
-./$shrink/../app/install/1_download_aerial.sh
+./$shrink/../app/install/1_download_aerial.sh Aerial.saver
 adaptive_wait
 osascript -e 'quit app "System Preferences"'
 ./$shrink/../app/install/2_local_install_workaround.sh
